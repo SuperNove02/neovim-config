@@ -9,8 +9,14 @@ filetype indent on
 " Turn syntax highlighting on
 syntax on
 
+" Indention Options
+set expandtab
+set filetype indent on
+set autoindent
+
 
 set exrc
+set incsearch
 
 set relativenumber
 set nu
@@ -41,4 +47,10 @@ Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
+
+set laststatus=2
+set noerrorbells
+set title
+
+set history=5000
 
