@@ -1,3 +1,51 @@
+call plug#begin('~/AppData/Local/nvim/plugged')
+" below are some vim plugins for demonstration purpose.
+" add the plugin you want to use here.
+Plug 'joshdick/onedark.vim'
+Plug 'gruvbox-community/gruvbox'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+call plug#end()
+
+call deoplete#custom#option('omni_patterns', {
+\ 'go': '[^. *\t]\.\w*',
+\})
+" GO Stuff
+" au filetype go inoremap <buffer> . .<C-x><C-o>
+set autowrite
+
+" Go syntax highlighting
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_operators = 1
+
+" Auto formatting and importing
+let g:go_fmt_autosave = 1
+let g:go_fmt_command = "goimports"
+
+" /GO Stuff
+
+" Auto Complete Brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+" /Auto Complete Brackets
+
+colorscheme gruvbox
+
+let g:airline#extensions#tabline#enabled = 1
+
 set nocompatible
 
 filetype on
@@ -11,10 +59,8 @@ syntax on
 
 " Indention Options
 set expandtab
-set filetype indent on
+filetype indent on
 set autoindent
-
-
 set exrc
 set incsearch
 
@@ -38,19 +84,3 @@ set scrolloff=8
 
 set signcolumn=yes
 set colorcolumn=80
-
-" plugging
-call plug#begin('~/.vim/plugged')
-
-Plug 'gruvbox-community/gruvbox'
-
-call plug#end()
-
-colorscheme gruvbox
-
-set laststatus=2
-set noerrorbells
-set title
-
-set history=5000
-
