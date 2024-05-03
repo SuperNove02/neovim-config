@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/sh
 BASEDIR=$PWD
 NVIMDIR=nvim
 echo $BASEDIR
 cd $BASEDIR
 
-ln -s ${PWD}/${NVIMDIR} ~/.config/nvim
+ln -sf ${PWD}/${NVIMDIR} ~/.config/nvim
