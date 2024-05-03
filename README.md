@@ -1,7 +1,7 @@
 # Vim-Configuration
 
 
-This is my personal vim configuration.
+This is my personal nvim configuration.
 
 Currently this is manly used for nvim and go development.
 
@@ -9,10 +9,7 @@ Currently this is manly used for nvim and go development.
 
 ## Installation
 
-### Linux
+### MacOS
 
-Place `init.vim` at /home/`user`/.config/nvim/ . NeoVim should automaticaly detect the changes.
-
-### Windows
-
-Why are you using Windows? ;)
+Execute the `install.sh` script.
+Make shure you have installed lazy nvim and also nvim
