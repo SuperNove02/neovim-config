@@ -1,4 +1,5 @@
 {
+  "gitsigns.nvim": { "branch": "main", "commit": "9cafac31a091267838e1e90fd6e083d37611f516" },
   "gruvbox.nvim": { "branch": "main", "commit": "6e4027ae957cddf7b193adfaec4a8f9e03b4555f" },
   "lazy.nvim": { "branch": "main", "commit": "e753eb602539bdad9f0709066d5893a788cb5db9" },
   "lualine.nvim": { "branch": "master", "commit": "b5e8bb642138f787a2c1c5aedc2a78cb2cebbd67" },
@@ -13,5 +14,6 @@
   "plenary.nvim": { "branch": "master", "commit": "8aad4396840be7fc42896e3011751b7609ca4119" },
   "ripgrep": { "branch": "master", "commit": "3ad0e83471588d8802d5747d0cc9accec76f7ccf" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
-  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" }
+  "telescope.nvim": { "branch": "master", "commit": "6312868392331c9c0f22725041f1ec2bef57c751" },
+  "vim-fugitive": { "branch": "master", "commit": "ce882460cf3db12e99f8bf579cbf99e331f6dd4f" }
 }
