@@ -31,6 +31,15 @@ return {
 				--
 			},
 		})
+
+    -- Autoformat on save
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      pattern = { "*.go", "*.lua" }, -- Ensure Lua files are included
+      callback = function()
+        vim.lsp.buf.format({ async = false })
+      end,
+    })
+
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
 	end,
 }
