@@ -28,7 +28,7 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local lspconfig = require("lspconfig")
-			lspconfig.tsserver.setup({})
+			--lspconfig.tsserver.setup({})
 			--lspconfig.pyright.setup({})
 			lspconfig.lua_ls.setup({})
 			lspconfig.gopls.setup({})
