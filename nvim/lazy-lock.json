@@ -1,5 +1,7 @@
 {
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
+  "coq.artifacts": { "branch": "artifacts", "commit": "ef5f21d638ccc456cfa5b8d0ab37093cefe48c8b" },
+  "coq_nvim": { "branch": "coq", "commit": "9e77f1f6196c4d4c17160aae82e18ae3f4916ce6" },
   "gitsigns.nvim": { "branch": "main", "commit": "4baa13519c2168cc9a7890a3580c50226ed018fb" },
   "gruvbox.nvim": { "branch": "main", "commit": "089b60e92aa0a1c6fa76ff527837cd35b6f5ac81" },
   "lazy.nvim": { "branch": "main", "commit": "f15a93907ddad3d9139aea465ae18336d87f5ce6" },
