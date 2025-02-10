@@ -37,3 +37,21 @@ vim.opt.tabstop = 2 -- 1 tab = 2 spaces
 vim.opt.shiftwidth = 2 -- indentation rule
 vim.opt.formatoptions = "qnj1" -- q  - comment formatting; n - numbered lists; j - remove comment when joining lines; 1 - don't break after one-letter word
 vim.opt.expandtab = true -- expand tab to spaces
+
+-- Clipboard
+--vim.opt.clipboard = "unnamedplus"
+vim.g.clipboard = {
+	name = "wl-clipboard",
+	copy = { ["+"] = "wl-copy", ["*"] = "wl-copy" },
+	paste = { ["+"] = "wl-paste", ["*"] = "wl-paste" },
+	cache_enabled = 0,
+}
+
+-- Copy to system clipboard
+vim.keymap.set("v", "<leader>y", '"+y', { noremap = true, silent = true }) -- Copy selected text
+vim.keymap.set("n", "<leader>Y", '"+Y', { noremap = true, silent = true }) -- Copy entire line
+
+-- Paste from system clipboard
+vim.keymap.set("n", "<leader>p", '"+p', { noremap = true, silent = true }) -- Paste after cursor
+vim.keymap.set("n", "<leader>P", '"+P', { noremap = true, silent = true }) -- Paste before cursor
+vim.keymap.set("v", "<leader>p", '"+p', { noremap = true, silent = true }) -- Paste in visual mode
