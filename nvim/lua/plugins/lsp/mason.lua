@@ -6,6 +6,8 @@ return {
       ensure_installed = {
         "lua_ls",
         "tinymist",
+        "basedpyright",
+        "ruff",
       },
     },
     dependencies = {
